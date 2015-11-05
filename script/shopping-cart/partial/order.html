@@ -1,0 +1,94 @@
+<br>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <div class="panel-default">
+        <div>
+          <h3>Order</h3>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-condensed">
+              <tbody>
+                <tr ng-repeat="item in trolley.getItems()">
+                  <td class="col-xs-10 col-sm-10">{{item.position}} {{item.firstname}} {{item.lastname}} print</td>
+                  <td class="col-xs-2 col-sm-2">{{item.cost | currency:'£'}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <div class="panel-default">
+        <div>
+          <h3>Delivery</h3>
+        </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table table-condensed">
+              <tbody>
+                <tr ng-repeat="option in order.getOptions()">
+                  <td class="col-xs-10 col-sm-10">
+                    <label class="radio">
+                      <input name="delivery" value="{{option.id}}" type="radio" ng-model="order.deliveryOption">{{option.details}}
+                    </label>
+                  </td>
+                  <td class="col-xs-2 col-sm-2">{{option.cost | currency:'£'}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <div class="panel-default">
+        <div>
+          <h3>Summary</h3>
+        </div>
+      <div class="panel-default">
+          <div class="table-responsive">
+            <table class="table table-condensed">
+              <tbody>
+                <tr>
+                  <td class="col-xs-10 col-sm-10">Subtotal</td>
+                  <td class="col-xs-2 col-sm-2">{{order.getTotalCost() | currency:'£'}}</td>
+                </tr>
+                <tr>
+                  <td class="col-xs-10 col-sm-10">Delivery</td>
+                  <td class="col-xs-2 col-sm-2">{{order.getDeliveryCost() | currency:'£'}}</td>
+                </tr>
+                <tr>
+                  <td class="col-xs-10 col-sm-10">Total</td>
+                  <td class="col-xs-2 col-sm-2">{{order.getTotalCost() + order.getDeliveryCost() | currency:'£'}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12" style="text-align: right">
+      <div class="panel-default">
+        <a href="/#/" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Go to Homepage">Cancel</a>
+        <a href="/#/thanks" ng-click="order.reset()" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Submit Order">Submit</a>
+      </div>
+    </div>
+  </div>
+
+</div>

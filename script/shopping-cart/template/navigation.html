@@ -1,0 +1,11 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a href="/#/" class="brand" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Go to Homepage">{{company}}</a>
+			<a href="/#/order" class="pull-right total" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Go to Checkout">{{total | currency:'£'}}</a>
+			<a href="/#/order" class="pull-right brand"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Go to Checkout">
+				<i ng-class="{'fa': true, 'fa-shopping-cart': total == 0, 'fa-cart-plus': total > 0}"></i>
+			</a>
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,14 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+			<div class="row">
+				<div ng-repeat="item in catalog.getItems()" class="col-xs-6 col-sm-4 col-md-3 col-lg-2 image " data-content="{{item.available ? 'Insert into cart' : 'Remove from cart'}}">
+					<span ng-click="processItem(item)" class="thumbnail text-center shadow" ng-class="{available: item.available, unavailable: !item.available}">
+						<img ng-src="image/{{item.id}}.png" width="180px">
+						<h6>{{item.position}} {{item.firstname}} {{item.lastname}}, {{item.cost | currency:'£':0}}</h6>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<div>
