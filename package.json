@@ -1,13 +1,12 @@
 {
-  "name": "shopping-cart",
+  "name": "vintage-prints",
   "version": "0.0.1",
   "description": "An example AngularJS Shopping Cart",
-  "main": "index.js",
+  "main": "web.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node web.js"
   },
   "dependencies": {
-    "ejs": "^2.3.3",
     "express": "^4.13.3",
     "gzippo": "^0.2.0"
   },
@@ -16,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/debugme/vintage-prints.git"
   },
   "keywords": [
     "node",
