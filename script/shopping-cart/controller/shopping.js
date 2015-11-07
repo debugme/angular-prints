@@ -18,9 +18,6 @@
 				$scope.catalog.insertItem(item.id);
 			}
 		};
-		angular.element(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
 	});
 
 })();
