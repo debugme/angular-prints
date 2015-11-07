@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "gzippo": "^0.2.0",
-    "morgan": "^1.6.1"
+    "grunt": "^0.4.4",
+    "grunt-pngmin": "^1.0.2"
   },
   "engines": {
     "node": "0.12.7"
@@ -18,10 +18,10 @@
     "type": "git",
     "url": "https://github.com/debugme/vintage-prints.git"
   },
+  "license" : "MIT",
   "keywords": [
     "node",
     "heroku",
     "express"
-  ],
-  "license": "MIT"
+  ]
 }
