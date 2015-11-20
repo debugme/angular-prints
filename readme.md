@@ -3,7 +3,7 @@ Vintage Prints
 
 A simple AngularJS shopping cart application that provides a responsive user experience on iPhone, iPad and Mac Book Pro.
 
-1. Run the application as a node application e.g. npm install;node web.js
+1. Run the application as a node application e.g. npm install; npm start
 
 2. Load a browser to connect to the server you just started e.g. http://localhost:5000
 
