@@ -1,5 +1,8 @@
-Vintage Prints
-==========
+# Demo
+
+http://vintage-prints.herokuapp.com/
+
+# Vintage Prints
 
 A simple AngularJS shopping cart application that provides a responsive user experience on iPhone, iPad and Mac Book Pro.
 
